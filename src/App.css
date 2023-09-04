@@ -1,0 +1,80 @@
+.container {
+  height: 800px;
+  width: 1000px;
+  background-color: black;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.fighter-aircraft-status {
+  width: 100%;
+  padding: 5px;
+}
+.left-side {
+  position: absolute;
+  left: 2px;
+  top: 20px;
+  width: 200px;
+  height: 200px;
+}
+.right-side {
+  position: absolute;
+  left: 600px;
+  top: 400px;
+  width: 200px;
+  height: 200px;
+}
+
+.battery-svg {
+  position: absolute;
+  left: 742px;
+  top: 71px;
+  width: 200px;
+  height: 200px;
+}
+.speedometer-arrow-svg {
+  position: absolute;
+  left: 115px;
+  top: 32px;
+  width: 135px;
+  height: 200px;
+}
+
+.speedometer-circle-svg,
+.speedometer-arrow-svg,
+.plane-svg,
+.battery-svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.speed-text {
+  font-size: 24px;
+  margin-top: 10px;
+  position: absolute;
+  top: 290px;
+  left: 151px;
+}
+
+.buttons {
+  position: absolute;
+  left: 5px;
+  top: 800px;
+}
+
+.start-button,
+.stop-button {
+  background-color: #bdbdbd;
+  border: none;
+  color: #282c34;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.start-button:hover,
+.stop-button:hover {
+  background-color: #bdbdbd;
+}

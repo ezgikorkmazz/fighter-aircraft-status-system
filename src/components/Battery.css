@@ -1,0 +1,59 @@
+:root {
+  --red: #ff0000;
+  --orange: #ff9100;
+  --yellow: #fff200;
+  --yellow-green: #d7fc03;
+  --green: #00ff00;
+  --black: #000000;
+  --gray: #9e9e9e;
+  --white: #ffffff;
+}
+
+.battery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.battery-svg {
+  width: 200px;
+  height: 400px;
+}
+
+.battery-body {
+  width: 150px;
+  height: 360px;
+  background: var(--black);
+  position: relative;
+  margin: 0 auto;
+  border: 4px solid var(--white);
+  border-radius: 30px;
+}
+
+.charge {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.battery-text {
+  font-size: 24px;
+  color: var(--white);
+  margin-top: 20px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blinking-text {
+  animation: blink 0.5s step-start infinite;
+}
